@@ -126,3 +126,36 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+@keyframes accordion-down-smooth {
+	from {
+		height: 0;
+		opacity: 0;
+		transform: translateY(-16px);
+	}
+	to {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes accordion-up-smooth {
+	from {
+		height: var(--radix-accordion-content-height);
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		height: 0;
+		opacity: 0;
+		transform: translateY(-16px);
+	}
+}
+
+@theme {
+	--animate-accordion-down-smooth: accordion-down-smooth 900ms
+		cubic-bezier(0.16, 1, 0.3, 1);
+	--animate-accordion-up-smooth: accordion-up-smooth 650ms
+		cubic-bezier(0.16, 1, 0.3, 1);
+}
