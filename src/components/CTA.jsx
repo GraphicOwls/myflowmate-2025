@@ -3,17 +3,28 @@
 import { Button } from '@/components/ui/button'
 import { SquarePoint } from '@/components/SquarePoint'
 import Link from 'next/link'
+import Image from 'next/image'
 import Container from '@/components/Container'
 
-export default function Hero() {
+export default function CTA() {
 	return (
-		<section className='border-stone-400 border-dashed border-b'>
-			<Container className='max-w-[1608px] mx-auto text-center grid place-items-center gap-4 py-28 border-l border-stone-400 border-dashed border-r relative'>
-				<h1 className='text-4xl font-bold'>Webflow Expert Support</h1>
+		<section className='border-stone-400 border-dashed border-b relative'>
+			<Container className='max-w-[1608px] mx-auto text-center grid place-items-center gap-4 py-28 border-l border-stone-400 border-dashed border-r relative bg-accent z-10'>
+				<h3 className='text-4xl font-bold'>Book Your Session Today!</h3>
 				<p className='text-xl text-stone-600 max-w-2xl leading-relaxed'>
-					Get 1 on 1 training & mentorship with a webflow expert. Want to learn
-					Webflow faster? Need help with interactions? Not a problem!
+					Learn how to build faster and how to be more efficient in Webflow with
+					direct 1 on 1 mentorship from your Webflow expert.
 				</p>
+				<div className='flex items-center justify-center gap-6 my-4 text-3xl font-cursive font-normal'>
+					<Image
+						src='/avatar.png'
+						alt='Noah Raskin'
+						width={60}
+						height={60}
+						className='rounded-full'
+					/>
+					Noah Raskin
+				</div>
 				<Link href='#book-session'>
 					<Button size='lg'>Book Session</Button>
 				</Link>
