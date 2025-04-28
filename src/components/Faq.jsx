@@ -7,7 +7,7 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '@/components/ui/accordion'
+} from '@/components/animate-ui/radix/accordion'
 import Link from 'next/link'
 
 const faqItems = [

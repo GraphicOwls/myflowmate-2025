@@ -150,8 +150,8 @@
 }
 
 @theme {
-	--animate-accordion-down-smooth: accordion-down-smooth 900ms
+	--animate-accordion-down-smooth: accordion-down-smooth 600ms
 		cubic-bezier(0.16, 1, 0.3, 1);
-	--animate-accordion-up-smooth: accordion-up-smooth 650ms
+	--animate-accordion-up-smooth: accordion-up-smooth 450ms
 		cubic-bezier(0.16, 1, 0.3, 1);
 }
