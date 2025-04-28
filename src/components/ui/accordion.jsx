@@ -50,7 +50,7 @@ function AccordionContent({ className, children, ...props }) {
 			)}
 			{...props}
 		>
-			<div className='pt-0 pb-4 will-change-transform backface-visibility-hidden'>
+			<div className='pt-0 pb-4 antialiased text-rendering-optimizelegibility'>
 				{children}
 			</div>
 		</AccordionPrimitive.Content>
