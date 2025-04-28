@@ -1,5 +1,6 @@
 /** @format */
 
+import { Analytics } from '@vercel/analytics/next'
 import { Geist, Geist_Mono, Inter, Mr_Dafoe } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
@@ -61,6 +62,7 @@ export default function RootLayout({ children }) {
             }
           `}
 				</Script>
+				<Analytics />
 			</body>
 		</html>
 	)
