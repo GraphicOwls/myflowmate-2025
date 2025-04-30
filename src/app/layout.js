@@ -32,6 +32,20 @@ export const metadata = {
 	title: 'MyFlowMate – Expert Webflow & Jetboost Support',
 	description:
 		'Get personalized support from a Webflow & Jetboost expert to help you launch your websites faster and more efficiently. Better understand how to use Webflow and Jetboost and all the nuances of the platforms.',
+	icons: {
+		icon: [
+			{
+				media: '(prefers-color-scheme: dark)',
+				url: '/mfm-icon-light.png',
+				href: '/mfm-icon-light.png',
+			},
+			{
+				media: '(prefers-color-scheme: light)',
+				url: '/mfm-icon-dark.png',
+				href: '/mfm-icon-dark.png',
+			},
+		],
+	},
 }
 
 export default function RootLayout({ children }) {
