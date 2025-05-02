@@ -79,7 +79,7 @@ function AccordionTrigger({
 				ref={triggerRef}
 				data-slot='accordion-trigger'
 				className={cn(
-					'flex flex-1 text-start items-center justify-between py-4 font-medium cursor-pointer',
+					'flex flex-1 text-start items-center justify-between py-4 font-bold cursor-pointer',
 					className,
 				)}
 				{...props}
@@ -143,7 +143,7 @@ function AccordionContent({
 						className='overflow-hidden'
 						{...props}
 					>
-						<div className={cn('pb-4 pt-0 text-sm', className)}>{children}</div>
+						<div className={cn('pb-4 pt-0', className)}>{children}</div>
 					</motion.div>
 				</AccordionPrimitive.Content>
 			)}
